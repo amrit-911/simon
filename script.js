@@ -22,7 +22,13 @@ function nextSequence() {
 
 
 }
+$("h1").click(function() {
+    if (started) {
+        nextSequence()
+        started = false
+    }
 
+})
 $("body").keydown(function() {
     if (started) {
         nextSequence()
